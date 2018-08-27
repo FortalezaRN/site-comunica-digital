@@ -32,7 +32,10 @@ ul.social-buttons {
       color: white;
       border-radius: 100%;
       outline: none;
-      background-color: $gray-900;
+      background-color: $primary;
+      .fontInstagram{
+        font-size: 23px;
+      }
       &:active,
       &:focus,
       &:hover {

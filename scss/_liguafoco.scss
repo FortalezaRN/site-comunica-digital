@@ -1,0 +1,34 @@
+#linguaFoco{
+  background-image: url("../img/dicacomunica.png");
+  background-size: 50% 100%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  .container{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    .row{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      .linguaFoco{
+        flex: 1;
+        .textForma{
+          h1{
+            font-family: 'AvantGarde';
+            color: $primary;
+          }
+          padding: 0 90px;
+        }
+      }
+      .linguaFocoHash{
+        font-family: 'AvantGarde';
+        font-size: 6vw;
+        color: $primary;
+        text-align: center;
+      }
+    }
+  }
+}

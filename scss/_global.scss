@@ -1,4 +1,9 @@
 // Global styling for this template
+
+@font-face {
+  font-family: 'AvantGarde';
+  src: url('../fonts/AvantGarde.woff') format('woff');
+}
 body {
   overflow-x: hidden;
   @include body-font;
@@ -19,6 +24,17 @@ a {
   color: $primary !important;
 }
 
+.text-muted {
+  font-size: 20px;
+}
+
+.bg-colorPrimary{
+  background-color: $primary;
+  h1, p{
+     color: #FFF !important;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -30,6 +46,13 @@ h6 {
 }
 
 section {
+  h1.section-heading{
+    font-size: 40px;
+    font-family: "AvantGarde";
+    letter-spacing: 6px;
+    color: $primary;
+    margin-bottom: 40px;
+  }
   padding: 100px 0;
   h2.section-heading {
     font-size: 40px;
@@ -49,6 +72,21 @@ section {
   section {
     padding: 150px 0;
   }
+}
+
+@media(max-width:960px) {
+  .desktop {
+    display: none;
+  }
+  #linguaFoco{
+    background-size: cover !important;
+  }
+  #comunicaForma{
+    background-image: none !important;
+  }
+  .textForma{
+    padding: 0 20px !important;
+  }  
 }
 
 // Button Styles
